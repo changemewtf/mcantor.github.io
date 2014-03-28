@@ -1,0 +1,119 @@
+/* vim: set fdm=marker: */
+
+/* {{{ Fonts */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-size: 3em;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.subtitle {
+    font-size: 1.25em;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 1.5px;
+}
+
+/* }}} */
+
+/* {{{ Cross-Browser Bullshit */
+
+.subtitle {
+    /* gradient background */
+    background: -moz-linear-gradient(left,  rgba(128,128,128,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(128,128,128,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(128,128,128,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(128,128,128,1) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(128,128,128,1) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(128,128,128,1) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+div.header {
+    /* crisp edges on auto-resized background png */
+    image-rendering:optimizeSpeed;             /* Legal fallback */
+    image-rendering:-moz-crisp-edges;          /* Firefox        */
+    image-rendering:-o-crisp-edges;            /* Opera          */
+    image-rendering:-webkit-optimize-contrast; /* Safari         */
+    image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+    image-rendering:crisp-edges;               /* CSS4 Proposed  */
+    image-rendering:pixelated;                 /* CSS4 Proposed  */
+    -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+}
+
+/* }}} */
+
+/* {{{ Themes (Colors, Images, Etc.) */
+
+body {
+    background: silver;
+    color: #454545;
+}
+
+div.wrapper {
+    background: white;
+    border: solid gray;
+}
+
+div.header {
+    background-color: white;
+    background-image: url('max_lg_face_background.png');
+}
+
+/* }}} */
+
+/* {{{ Breathing Room */
+
+div.header {
+    margin-top: 25px;
+}
+
+.title, .subtitle {
+    margin: 10px 0;
+    padding: 0px 120px;
+}
+
+.subtitle {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* }}} */
+
+/* {{{ Layout */
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    height: 100%;
+}
+
+div.wrapper {
+    height: 100%;
+    width: 980px;
+    margin: 0px auto;
+    padding: 0px 0px;
+
+    border-width: 0px 5px;
+
+    overflow: auto;
+}
+
+div.header {
+    background-repeat: no-repeat;
+    background-position: 15px -10px;
+    background-size: auto 84px;
+
+    overflow: auto;
+}
+
+/* }}} */
