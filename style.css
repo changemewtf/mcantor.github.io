@@ -138,26 +138,31 @@ main.content {
     overflow: auto;
 }
 
-article h1, article h2, article header time, article p {
+article header {
+    overflow: auto;
+}
+
+article h1, article h2, article p {
     padding: 0px 60px;
 }
 
-article header h1 {
-    margin-bottom: 10px;
-}
 
 /* }}} */
 
 /* {{{ Anchor Overrides */
 
-a.header-link, article header a {
+a.header-link {
     color: inherit;
-    text-decoration: inherit;
+    text-decoration: none;
 }
 
-article a h1:hover {
+article a header:hover {
     color: black;
     background: white;
 }
 
 /* }}} */
+
+article header, article {
+    border-bottom: 1px solid #c0c0c0;
+}
