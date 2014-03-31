@@ -166,3 +166,10 @@ article a header:hover {
 article header, article {
     border-bottom: 1px solid #c0c0c0;
 }
+
+article footer {
+    text-align: right;
+    font-style: italic;
+    font-size: 0.75em;
+    margin: 40px 0px;
+}
