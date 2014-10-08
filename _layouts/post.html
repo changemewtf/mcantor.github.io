@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="post">
+    {% comment %}
+    <a class="header-link" href="{{ page.url }}">
+    {% endcomment %}
+        <header class="post-header">
+            <h1>{{ page.title }}</h1>
+            <p class="meta">
+                <time datetime="{{ page.date }}" pubdate="pubdate">
+                    on {{ page.date | date: "%B %d, %Y" }}
+                </time>
+            </p>
+        </header>
+    {% comment %}
+    </a>
+    {% endcomment %}
+
+    <article class="post-content">
+        {{ content }}
+    </article>
+
+    <hr />
+
+    <footer>
+        <p style="font-size: smaller; color: gray;">If you spot a problem or have a question about this article, please <a href="https://github.com/mcantor/mcantor.github.io/issues">create a GitHub issue</a>.</p>
+    </footer>
+</div>

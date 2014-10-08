@@ -1,0 +1,3 @@
+if &ft == 'html' || &ft == 'markdown'
+    setl ft=liquid
+endif

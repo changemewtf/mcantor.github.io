@@ -1,0 +1,12 @@
+# Site settings
+title: "Max Cantor::Blog"
+email: "max@maxcantor.net"
+description: "Doing it right, doing it right now."
+baseurl: ""
+url: "http://mcantor.github.io"
+twitter_username: mcantor
+github_username: mcantor
+
+# Build settings
+markdown: kramdown
+permalink: pretty

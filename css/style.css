@@ -1,0 +1,141 @@
+/* vim: set fdm=marker: */
+
+/* my styles not yet integrated into jekyll default main.css */
+
+/* {{{ Fonts */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.subtitle {
+    font-size: 1.25em;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 1.5px;
+}
+
+article h1 {
+    font-size: 2.5em;
+}
+
+/* }}} */
+
+/* {{{ Themes (Colors, Images, Etc.) */
+
+body {
+    background: silver;
+    color: #454545;
+}
+
+div.container {
+    background: #FFFFF7;
+}
+
+
+header.banner .subtitle {
+    display: none;
+}
+
+.code, code {
+    font-size: 1.2em;
+    font-family: monospace;
+    background: #DDD;
+}
+
+code {
+    padding: 1px;
+}
+
+.code {
+    border: 1px solid #CCC;
+    border-width: 1px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* }}} */
+
+/* {{{ Breathing Room */
+
+.title, .subtitle {
+    padding-right: 120px;
+}
+
+article p {
+    line-height: 1.35em;
+}
+
+main.content {
+    padding-bottom: 150px;
+}
+
+/* }}} */
+
+/* {{{ Layout */
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    min-height: 100%;
+}
+
+div.container {
+    height: 100%;
+    width: 980px;
+    margin: 0px auto;
+    padding: 0px 0px;
+
+    overflow: auto;
+}
+
+header.banner {
+    overflow: auto;
+    text-align: right;
+    padding-top: 125px;
+}
+
+main.content {
+    overflow: auto;
+}
+
+article header {
+    overflow: auto;
+}
+
+article h1, article h2, article p {
+    padding: 0px 60px;
+}
+
+
+/* }}} */
+
+/* {{{ Anchor Overrides */
+
+a.header-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+article a header:hover {
+    color: black;
+    background: white;
+}
+
+/* }}} */
+
+article header, article {
+    border-bottom: 1px solid #c0c0c0;
+}
+
+article footer {
+    text-align: right;
+    font-style: italic;
+    font-size: 0.75em;
+    margin: 40px 0px;
+}
