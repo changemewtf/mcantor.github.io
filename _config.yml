@@ -11,4 +11,4 @@ github_username: mcantor
 markdown: kramdown
 permalink: pretty
 
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
